@@ -93,10 +93,12 @@ boss:
   countdown-after-death: 30
 
 costs:
-  cost1:
-    type: VANILLA
-    item: DIAMOND
-    amount: 5
+- item: boss_map
+  amount: 1
+  type: ITEMSADDER
+- item: DIAMOND
+  amount: 1
+  type: VANILLA
 ```
 
 ### Step 4: Enter Editor Mode
