@@ -70,7 +70,7 @@ max-players: 5
 min-players: 1
 time-limit: 1800
 max-instances: 3
-death-behavior: RESPAWN
+death-behavior: INFINITE_RESPAWN
 
 spawn-location:
   world: "dungeon_dragon_template"
@@ -491,7 +491,7 @@ Dungeon instances progress through these states:
 ### RESPAWN Mode
 
 ```yaml
-death-behavior: RESPAWN
+death-behavior: INFINITE_RESPAWN
 ```
 
 - Players respawn at the dungeon spawn point
@@ -501,13 +501,23 @@ death-behavior: RESPAWN
 ### SPECTATOR Mode
 
 ```yaml
-death-behavior: SPECTATOR
+death-behavior: ONE_LIFE_SPECTATOR
 ```
 
 - Players become spectators
 - Cannot interact with the world
 - Can watch teammates
 - Can exit instantly with `/dungeon exit`
+
+
+### KICK Mode
+
+```yaml
+death-behavior: ONE_LIFE_KICK
+```
+
+- Players wil be kicked after they die
+
 
 ## Cost System
 
