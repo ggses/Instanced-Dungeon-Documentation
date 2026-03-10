@@ -24,7 +24,7 @@ InstancedDungeons is a fully configurable instanced dungeon system for Paper 1.2
 ### Required Dependencies
 - **Paper 1.21** (or compatible fork)
 - **Java 21**
-- **Multiverse-Core 4.3.12** (for world management)
+- **Multiverse-Core 5.5.2.** (for world management)
 
 ### Optional Dependencies
 - **MythicMobs** (for custom mobs and bosses)
