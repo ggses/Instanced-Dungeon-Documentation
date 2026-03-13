@@ -158,7 +158,7 @@ Create a loot chest configuration:
 
 Then get the loot chest item:
 ```bash
-/lootchest give chest_1
+/dungeon lootchest give chest_1
 ```
 
 Place the chest item in your dungeon template world, then edit `plugins/InstancedDungeons/dungeons/dragon_lair/loot-chests/chest_1.yml`:
