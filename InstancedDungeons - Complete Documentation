@@ -337,13 +337,13 @@ Per-dungeon list of blocked commands during active runs.
 
 ```yaml
 blocked-commands:
-  - "home"
-  - "back"
-  - "spawn"
-  - "tpahere"
+  - "/home"
+  - "/back"
+  - "/spawn"
+  - "/tpahere"
 ```
 
-Commands are matched without `/` and support both exact command and subcommand usage.
+Recommended format: write commands with `/` (like above). The plugin also accepts entries without `/`. Matching supports both exact command and subcommand usage.
 
 ### Spawner Configuration (`dungeons/<id>/spawners/<spawner_id>.yml`)
 
