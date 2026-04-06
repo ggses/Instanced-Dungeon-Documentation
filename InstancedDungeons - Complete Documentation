@@ -9,13 +9,13 @@ InstancedDungeons is a fully configurable instanced dungeon system for Paper 1.2
 - **Template-Based Dungeons**: Use existing worlds as templates that are copied for each instance
 - **Multiple Instances**: Run multiple isolated copies of the same dungeon simultaneously
 - **Party System**: Organize players into parties with invite codes and time limits
-- **Cost System**: Require vanilla or ItemsAdder items to enter dungeons
+- **Cost System**: Require vanilla, ItemsAdder, Oraxen (beta), or Nexo (beta) items to enter dungeons
 - **Max Instance Limits**: Control server load with configurable instance limits
 - **Boss Bar Timer**: Visual countdown timer for each dungeon instance
 - **Death Handling**: Choose between respawn or spectator mode on player death
 - **Safe Restart**: Automatically teleport players to safety on server restart
 - **Advanced Mob Spawning**: Configurable mob spawners with triggers, equipment, and MythicMobs support
-- **Loot System**: Randomized loot chests with support for vanilla and ItemsAdder items
+- **Loot System**: Randomized loot chests with support for vanilla, ItemsAdder, Oraxen (beta), and Nexo (beta) items
 - **Boss Integration**: MythicMobs boss support with configurable spawn triggers
 - **Command-Based API**: All features accessible via commands for easy GUI plugin integration
 
@@ -29,6 +29,8 @@ InstancedDungeons is a fully configurable instanced dungeon system for Paper 1.2
 ### Optional Dependencies
 - **MythicMobs** (for custom mobs and bosses)
 - **ItemsAdder** (for custom items in costs and loot)
+- **Oraxen** (beta custom item support)
+- **Nexo** (beta custom item support)
 
 ## Installation
 
@@ -292,6 +294,16 @@ Exits editor mode, returns you to your original location, and restores survival 
 ### `/dungeon reload`
 Reloads all plugin configurations and dungeon data.
 
+### `/dungeon itemsadder [itemId]`
+Lists available ItemsAdder IDs or shows exact config usage for a selected ID.
+
+### `/dungeon oraxen [itemId]`
+Lists available Oraxen IDs or shows exact config usage for a selected ID. *(beta)*
+
+### `/dungeon nexo [itemId]`
+Lists available Nexo IDs or shows exact config usage for a selected ID. *(beta)*
+
+
 ## Configuration Files
 
 ### Main Configuration (`config.yml`)
@@ -317,6 +329,21 @@ All plugin messages can be customized. Color codes using `&` are supported.
 ### Dungeon Configuration (`dungeons/<id>/config.yml`)
 
 Main dungeon settings including display name, world template, player limits, time limits, costs, and spawn/exit locations.
+
+
+### Command Blacklist (`dungeons/<id>/command-blacklist.yml`)
+
+Per-dungeon list of blocked commands during active runs.
+
+```yaml
+blocked-commands:
+  - "home"
+  - "back"
+  - "spawn"
+  - "tpahere"
+```
+
+Commands are matched without `/` and support both exact command and subcommand usage.
 
 ### Spawner Configuration (`dungeons/<id>/spawners/<spawner_id>.yml`)
 
