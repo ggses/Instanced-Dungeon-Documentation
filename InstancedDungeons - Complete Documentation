@@ -2,7 +2,7 @@
 
 ## Overview
 
-InstancedDungeons is a fully configurable instanced dungeon system for Paper 1.21 servers. It allows server administrators to create template-based dungeons that support multiple simultaneous instances, party systems, customizable mobs, loot chests, and boss fights.
+InstancedDungeons is a fully configurable instanced dungeon system for Paper 1.21, 26.x servers. It allows server administrators to create template-based dungeons that support multiple simultaneous instances, party systems, customizable mobs, loot chests, and boss fights.
 
 ### Key Features
 
@@ -22,9 +22,10 @@ InstancedDungeons is a fully configurable instanced dungeon system for Paper 1.2
 ## Requirements
 
 ### Required Dependencies
-- **Paper 1.21** (or compatible fork)
-- **Java 21**
-- **Multiverse-Core 5.5.2.** (for world management)
+|                | **1.21.x**     | **1.26.x**     |
+|----------------|----------------|----------------|
+| **Java**       | 21 or higher   | 25 or higher   |
+| **Multiverse-Core** | 5.5.2     | 5.6.0          |
 
 ### Optional Dependencies
 - **MythicMobs** (for custom mobs and bosses)
