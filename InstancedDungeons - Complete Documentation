@@ -576,15 +576,17 @@ costs:
 
 ### Player Permissions
 
-- `instanceddungeons.use` - Use dungeons (default: true)
-- `instanceddungeons.spectate` - Spectate dungeons (default: op)
-- `instanceddungeons.bypass.cost` - Bypass entry costs (default: op)
-- `instanceddungeons.bypass.limit` - Bypass max instance limits (default: op)
+| Permission | Description | Default |
+|------------|-------------|---------|
+| `instanceddungeons.admin` | Access to admin and editor commands | op |
+| `instanceddungeons.open` | Allows creating dungeon parties with `/dungeon open` | true |
+| `instanceddungeons.join` | Allows joining dungeon parties with `/dungeon join` | true |
+| `instanceddungeons.open.<dungeon_id>` | Allows creating a party only for a specific dungeon template | true |
+| `instanceddungeons.join.<dungeon_id>` | Allows joining a party only for a specific dungeon template | true |
+| `instanceddungeons.spectate` | Allows spectating active dungeons | op |
+| `instanceddungeons.bypass.cost` | Bypasses item and money entry costs | op |
+| `instanceddungeons.bypass.limit` | Bypasses max active instance limits | op |
 
-### Admin Permissions
-
-- `instanceddungeons.admin` - All admin commands (default: op)
-- `instanceddungeons.*` - All permissions (default: op)
 
 ## Party System
 
