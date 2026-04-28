@@ -587,6 +587,11 @@ costs:
 | `instanceddungeons.bypass.cost` | Bypasses item and money entry costs | op |
 | `instanceddungeons.bypass.limit` | Bypasses max active instance limits | op |
 
+- Global open/join `true` + template open/join `true` = allowed
+- Global open/join `true` + template open/join `false` = denied
+- Global open/join `false` + template open/join `true` = denied
+- Global open/join `false` + template open/join `false` = denied
+
 
 ## Party System
 
